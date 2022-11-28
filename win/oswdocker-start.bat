@@ -1,0 +1,1 @@
+docker-compose -f ../docker/docker-compose.yml -p "p001" up -d

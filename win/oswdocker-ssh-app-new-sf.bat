@@ -1,0 +1,1 @@
+docker-compose -f ../docker/docker-compose.yml -p "p001" exec app /bin/bash -c "rm -r /var/www/html/project; cd /var/www/html; symfony new project;"

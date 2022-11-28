@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app:
+    container_name: p001-app
+    build: .
+    ports:
+      - "8080:80"
+      - "8443:443"
+      - "8001:8000"
+    volumes:
+      - type: bind
+        source: ./..
+        target: /var/www/html
+    tty: true
